@@ -1,0 +1,70 @@
+q.2a 
+public class SolarSystemDetails {
+public static void main(String[] args) {
+int panelId = 101;
+double energyGenerated = 15.5;
+int numberOfPanels = 8;
+char systemStatus = 'A'; 
+
+System.out.println("Panel ID: " + panelId);
+System.out.println("Energy Generated: " + energyGenerated + " kWh");
+System.out.println("Number of Solar Panels: " + numberOfPanels);
+System.out.println("System Status: " + systemStatus);
+}
+}
+OUTPUT:
+Panel ID: 101
+Energy Generated: 15.5 kWh
+Number of Solar Panels: 8
+System Status: A
+
+q.2b
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+double energy = sc.nextDouble();
+
+if (energy >= 10) {
+System.out.println("Good Energy Generation");
+} else {
+System.out.println("Low Energy Generation");
+}
+
+sc.close();
+}
+}
+INPUT:
+9
+OUTPUT:
+Low Energy Generation
+
+q.2c
+import java.util.Scanner;
+
+public class ex13 {
+
+public static double calculateTotalEnergy(double morningEnergy, double eveningEnergy) {
+return morningEnergy + eveningEnergy;
+}
+
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+double morningEnergy = sc.nextDouble();
+double eveningEnergy = sc.nextDouble();
+
+double totalEnergy = calculateTotalEnergy(morningEnergy, eveningEnergy);
+
+System.out.println(totalEnergy);
+
+sc.close();
+}
+}
+INPUT:
+35.5
+67.8
+OUTPUT:
+103.3
